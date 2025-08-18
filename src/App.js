@@ -51,7 +51,7 @@ const App = () => {
       linkedin: "https://www.linkedin.com/in/akashbhatt123/",
       github: "https://github.com/iamakashbhatt",
       resumeUrl:
-        "https://drive.google.com/file/d/1O-1b8-xXFw6R1SpAiEweCr3vaqRIcxB3/view?usp=sharing",
+        "https://drive.google.com/file/d/1yA5BTclj8tc_g1VKLcVaaSGyy0-3Uuhc/view?usp=sharing",
     },
     skills: [
       "JavaScript (ES6+)",
