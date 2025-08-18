@@ -14,7 +14,10 @@ const App = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState("about");
 
-  const navLinks = ["About", "Skills", "Experience", "Projects", "Contact"];
+  const navLinks = React.useMemo(
+    () => ["About", "Skills", "Experience", "Projects", "Contact"],
+    []
+  );
 
   // --- Scroll Spy Logic ---
   React.useEffect(() => {
@@ -35,7 +38,7 @@ const App = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navLinks]);
 
   // --- Data extracted and enhanced from your resume ---
   const portfolioData = {
@@ -48,7 +51,7 @@ const App = () => {
       linkedin: "https://www.linkedin.com/in/akashbhatt123/",
       github: "https://github.com/iamakashbhatt",
       resumeUrl:
-        "https://drive.google.com/file/d/1O-1b8-xXFw6R1SpAiEweCr3vaqRIcxB3/view?usp=sharing", 
+        "https://drive.google.com/file/d/1O-1b8-xXFw6R1SpAiEweCr3vaqRIcxB3/view?usp=sharing",
     },
     skills: [
       "JavaScript (ES6+)",
@@ -303,16 +306,16 @@ const App = () => {
                       </span>
                     ))}
                   </div>
-                  <a
-                    href="#"
-                    className="group text-cyan-400 font-semibold inline-flex items-center mt-auto"
+                  <button
+                    type="button"
+                    className="group text-cyan-400 font-semibold inline-flex items-center mt-auto bg-transparent border-none p-0 cursor-pointer"
                   >
                     <span>View Details</span>
                     <ArrowRight
                       className="ml-2 transition-transform group-hover:translate-x-1"
                       size={16}
                     />
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
