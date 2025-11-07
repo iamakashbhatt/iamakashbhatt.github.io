@@ -306,16 +306,6 @@ const App = () => {
                       </span>
                     ))}
                   </div>
-                  <button
-                    type="button"
-                    className="group text-cyan-400 font-semibold inline-flex items-center mt-auto bg-transparent border-none p-0 cursor-pointer"
-                  >
-                    <span>View Details</span>
-                    <ArrowRight
-                      className="ml-2 transition-transform group-hover:translate-x-1"
-                      size={16}
-                    />
-                  </button>
                 </div>
               ))}
             </div>
