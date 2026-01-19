@@ -44,7 +44,7 @@ const App = () => {
     name: "Akash Bhatt",
     title: "Senior Software Engineer",
     summary:
-      "A Senior Software Engineer with over 4 years of experience specializing in frontend development. I have a proven track record of designing, developing, and deploying highly responsive, scalable, and user-centric web applications. My expertise lies in translating complex business requirements and design wireframes into high-quality, maintainable code using modern JavaScript frameworks like React.",
+      "A Senior Software Engineer with over 5 years of experience specializing in frontend development. I have a proven track record of designing, developing, and deploying highly responsive, scalable, and user-centric web applications. My expertise lies in translating complex business requirements and design wireframes into high-quality, maintainable code using modern JavaScript frameworks like React.",
     contact: {
       email: "akashbhattq1@gmail.com",
       linkedin: "https://www.linkedin.com/in/akashbhatt123/",
