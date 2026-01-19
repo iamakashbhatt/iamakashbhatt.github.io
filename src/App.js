@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   CheckCircle,
   FileText,
   Github,
